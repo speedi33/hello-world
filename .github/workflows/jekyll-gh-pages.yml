@@ -27,6 +27,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          ref: "master"
       - name: Provide Git History
         uses: speedi33/git-history-action@main
         with:

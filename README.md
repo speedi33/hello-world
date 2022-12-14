@@ -10,3 +10,5 @@ Change for test branch 2.
 Another change for test branch 2.
 
 test branch 3 change 1
+
+test branch 3 change 2

@@ -27,6 +27,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Provide Git History
+        uses: speedi33/git-history-action@main
+        with:
+          who-to-greet: "speedi33"        
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Build with Jekyll

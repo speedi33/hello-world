@@ -8,3 +8,5 @@ This is the an extension done by a feature branch.
 Change for test branch 2.
 
 Another change for test branch 2.
+
+master change during test branch 3

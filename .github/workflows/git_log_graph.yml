@@ -25,7 +25,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}/git-log-graph
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -34,6 +34,8 @@ jobs:
           fetch-depth: 0
       - name: Provide Git Log Graph
         uses: speedi33/git-history-action@main
+        with:
+          upload-path: './git-log-graph'
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact

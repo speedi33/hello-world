@@ -33,7 +33,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Provide Git Log Graph
-        uses: speedi33/git-history-action@main
+        uses: speedi33/git-log-graph-action@main
         with:
           upload-path: './git-log-graph'
       - name: Setup Pages
